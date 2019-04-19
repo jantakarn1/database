@@ -1,0 +1,13 @@
+CREATE TABLE restaurantoperator(
+reso_id int(10) not null primary key auto_increment ,
+reso_name varchar(100) not null,
+idcard int(13) not null,
+reso_address varchar(200) not null,
+reso_count varchar(30) not null,
+reso_tel int(10) not null,
+reso_email varchar(50) not null,
+reso_username varchar(50) not null,
+reso_password_hash varchar(50) not null,
+reso_salt varchar(256) NOT NULL,
+reso_created_date datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
+)ENGINE=InnoDB DEFAULT CHARSET=latin1;
